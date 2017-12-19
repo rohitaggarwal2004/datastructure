@@ -9,8 +9,8 @@ package datastructure.sorting;
  *
  * @author roaggarw
  */
-public interface Sort<T extends Comparable> {
-
-    public void sort();
-
+public interface Iterator<T> {
+    public boolean hasNext();
+    public T next();
+    
 }

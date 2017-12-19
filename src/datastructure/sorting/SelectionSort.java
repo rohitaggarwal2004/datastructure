@@ -9,11 +9,6 @@ package datastructure.sorting;
  *
  * @author roaggarw
  */
-public class SelectionSort<T> implements Sort<T> {
-
-    @Override
-    public void sort() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+public class SelectionSort<T> {
 
 }
