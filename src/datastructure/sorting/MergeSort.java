@@ -26,8 +26,6 @@ public class MergeSort<T> implements Sort<Comparable> {
     }
 
     private void mergeSort(List<Comparable> newList, String pos) {
-        System.out.println("pos= " + pos + " list=" + newList);
-
         if (newList.size() > 1) {
             int mid = newList.size() / 2;
             List<Comparable> left = new ArrayList<>(newList.subList(0, mid));
@@ -42,10 +40,6 @@ public class MergeSort<T> implements Sort<Comparable> {
         int li = 0;
         int ri = 0;
         int i = 0;
-        System.out.println("Before merged List " + newList);
-
-        System.out.println("Before left List " + left);
-        System.out.println("Before right List " + right);
         while (li < left.size() && ri < right.size()) {
             int value = left.get(li).compareTo(right.get(ri));
             if (value <= 0) {
@@ -57,11 +51,6 @@ public class MergeSort<T> implements Sort<Comparable> {
             }
             i++;
         }
-        System.out.println("li " + li);
-        System.out.println("ri " + ri);
-        System.out.println("i " + i);
-        System.out.println("left " + left);
-        System.out.println("right " + right);
         while (li < left.size()) {
             newList.set(i, left.get(li));
             li++;
@@ -72,7 +61,6 @@ public class MergeSort<T> implements Sort<Comparable> {
             ri++;
             i++;
         }
-        System.out.println("merged List " + newList);
     }
 
     public static void main(String[] args) {
