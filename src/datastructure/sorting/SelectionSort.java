@@ -10,8 +10,8 @@ import java.util.List;
 
 /**
  *
- * @author roaggarw
- * find min at each iteration, and put at first place at end of each iteration.
+ * @author roaggarw find min at each iteration, and put at first place at end of
+ * each iteration.
  */
 public class SelectionSort<T> implements Sort<Comparable> {
 
@@ -24,13 +24,13 @@ public class SelectionSort<T> implements Sort<Comparable> {
     @Override
     public void sort() {
         for (int i = 0; i < list.size(); i++) {
-            int swapped = i;
+            int swappedIndex = i;
             for (int j = i + 1; j < list.size(); j++) {
-                if (list.get(swapped).compareTo(list.get(j)) > 0) {
-                    swapped = j;
+                if (list.get(swappedIndex).compareTo(list.get(j)) > 0) {
+                    swappedIndex = j;
                 }
             }
-            swap(i,swapped);
+            swap(i, swappedIndex);
         }
 
     }
