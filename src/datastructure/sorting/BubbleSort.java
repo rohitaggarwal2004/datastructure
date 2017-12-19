@@ -8,6 +8,11 @@ package datastructure.sorting;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Push max to the last. Do swapping all the time.
+ *
+ * @author roaggarw
+ */
 public class BubbleSort implements Sort<Comparable> {
 
     private final List<Comparable> list = new ArrayList<>();
