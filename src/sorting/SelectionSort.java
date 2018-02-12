@@ -12,6 +12,8 @@ import java.util.List;
  *
  * @author roaggarw find min at each iteration, and put at first place at end of
  * each iteration.
+ * https://www.youtube.com/watch?v=ize8y3abju8
+ * https://www.youtube.com/watch?v=EpikE3xMQ6w
  */
 public class SelectionSort<T> implements Sort<Comparable> {
 
